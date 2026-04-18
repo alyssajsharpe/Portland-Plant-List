@@ -10,6 +10,13 @@ import Footer from "../components/navigation/Footer";
 import Navigation from "../components/navigation/Navigation";
 import {matchesType, matchesCanopy, matchesSun, matchesMoisture, matchesHeight, matchesSearch }from "../helpers/filterFunctions";
 
+// Todo
+// fix filtering, currently returning all results that match a specific checkbox
+// Pagination
+// Fix carousel
+// Update plant page UI to look like the pet adoption page
+
+
 export default function Home() {
   const [plants, setPlants] = useState<Plant[]>([]);
   const [filters, setFilters] = useState<Filters>({
@@ -35,6 +42,9 @@ export default function Home() {
       matchesHeight(plant, filters) &&
       matchesSearch(plant, filters)
   );
+    console.log("Filters: ", filters);
+    console.log("Filtered plants: ", filteredPlants)
+
 
   // If all filters are deselected, reset the json
   useEffect(() => {
@@ -43,6 +53,7 @@ export default function Home() {
         filters.sun.length === 0 &&
         filters.moisture.length === 0) {
       setPlants(plantJson.plants);
+
     }
   }, [filters]);
 
