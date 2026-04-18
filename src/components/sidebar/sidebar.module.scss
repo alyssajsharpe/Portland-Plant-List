@@ -12,12 +12,9 @@
         width: 100%;
     }
 
-
     .filterItems {
-
-        @media screen and (max-width: 1024px) {
-            //display: none;
-        }
+        overflow: hidden;
+        transition: all 0.3s ease-in;
         .filter {
             margin: 40px 0;
 
@@ -26,6 +23,20 @@
             }
         }
     }
+
+    .filterItems.show {
+        max-height: 1500px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .filterItems.hide {
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;    
+    }
+
 
     .items {
         display: flex;
@@ -46,3 +57,4 @@
         }
     }
 }
+

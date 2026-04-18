@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./sidebar.module.scss";
 import { Filters, Plant } from "@/helpers/types";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Sidebar({
   plants,
@@ -22,7 +22,23 @@ export default function Sidebar({
   setSliderValueAction: (value: number) => void;
 }) {
 
-  const [showFilters, setShowFilters] = useState<boolean>(true);
+  const [showFilters, setShowFilters] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mobile = window.innerWidth <= 768;
+    setIsMobile(mobile);
+
+    if (mobile) {
+      setShowFilters(false);
+    } else {
+      setShowFilters(true);
+    }
+  }, []);
+  
+  function handleFilterDisplay() {
+    setShowFilters(prev => !prev);
+  }
   
   // Filter update functions
   function updateTypeFilter(value: string, checked: boolean) {
@@ -67,8 +83,8 @@ export default function Sidebar({
   return (
     <div className={styles.sidebarWrapper}>
       <h3>Total plants ({resultsSize})</h3>
-      {showFilters &&
-        <div className={styles.filterItems}>
+      {/* {showFilters && */}
+        <div id="filters" className={`${styles.filterItems} ${showFilters ? styles.show : styles.hide}`}>
           <div className={styles.filter}>
             <h5>Type</h5>
             <div className={styles.items}>
@@ -263,8 +279,8 @@ export default function Sidebar({
           </div>
           <button className="button secondary" onClick={resetFiltersAction}>Reset filters</button>
         </div>
-        }
-        <button className="button contrast" onClick={() => setShowFilters(!showFilters)} >{!showFilters ? 'Show Filters' : 'Hide Filters'}</button>
+   
+        <button className="button contrast" onClick={() => handleFilterDisplay()} >{!showFilters ? 'Show Filters' : 'Hide Filters'}</button>
     </div>
   );
 }
