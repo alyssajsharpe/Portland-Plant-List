@@ -23,7 +23,6 @@ export default function Sidebar({
 }) {
 
   const [showFilters, setShowFilters] = useState(true);
-  //const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const mobile = window.innerWidth <= 768;
@@ -139,9 +138,9 @@ export default function Sidebar({
               </div>
               <div className={styles.itemWrapper}>
                 <label className="checkbox">
-                   <input type="checkbox" value="Small Shrub" 
+                   <input type="checkbox" value="Small/Medium Shrub" 
                     onChange={(e) => updateCanopyFilter(e.target.value, e.target.checked)} 
-                    checked={filters.canopy.includes("Small Shrub")}/>
+                    checked={filters.canopy.includes("Small/Medium Shrub")}/>
                   <span className="checkmark"></span>
                    Small and Medium Shrubs (less than 5ft)
                 </label>
@@ -275,7 +274,7 @@ export default function Sidebar({
               </div>
             </div>
           </div>
-          <button className="button secondary" onClick={resetFiltersAction}>Reset filters</button>
+          <button className="button secondary mtb-10" onClick={resetFiltersAction}>Reset filters</button>
         </div>
    
         <button className="button contrast" onClick={() => handleFilterDisplay()} >{!showFilters ? 'Show Filters' : 'Hide Filters'}</button>

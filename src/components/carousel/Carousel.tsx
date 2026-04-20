@@ -4,11 +4,13 @@ import styles from "./carousel.module.scss";
 import useEmblaCarousel from 'embla-carousel-react'
 import placeholder from "../../../public/placeholder.png";
 import { Plant } from "@/helpers/types";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { Key } from "react";
 
 export default function Carousel({
   plant
 }:{
-  plant: Plant
+  plant: any
 }) {
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false })
@@ -20,7 +22,7 @@ export default function Carousel({
         <div className={styles.embla__viewport} ref={emblaRef}>
           <div className={styles.embla__container}>
             {plant.images && plant.images.length > 0 ? (
-              plant.images.map((image, i) => (
+              plant.images.map((image: string | StaticImport, i: Key | null | undefined) => (
                 <div className={styles.embla__slide} key={i}>
                   <Image
                     src={image}

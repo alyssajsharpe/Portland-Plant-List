@@ -4,58 +4,84 @@ import plantJson from "../json/portland_plants.json";
 import Searchbar from "../components/searchbar/Searchbar";
 import MainContent from "../components/MainContent";
 import Sidebar from "../components/sidebar/Sidebar";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Filters, Plant } from "../helpers/types";
 import Footer from "../components/navigation/Footer";
 import Navigation from "../components/navigation/Navigation";
 import {matchesType, matchesCanopy, matchesSun, matchesMoisture, matchesHeight, matchesSearch }from "../helpers/filterFunctions";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { getFiltersFromURL, updateURL } from "@/helpers/misc";
 
 // Todo
-// fix filtering, currently returning all results that match a specific checkbox
+// ----------------------------------------------------
 // Pagination
-// Fix carousel
-// Update plant page UI to look like the pet adoption page
-
+// Fix carousel on plant pages
+// Update plant page UI
+// Sdd more images to plant json
+// Browser back button from plant page doesn't refresh list
 
 export default function Home() {
-  const [plants, setPlants] = useState<Plant[]>([]);
-  const [filters, setFilters] = useState<Filters>({
-    type: [], // native vs invasive
-    canopy: [], // large tree, small tree, large shrub, small shrub, grasses
-    sun: [], // full sun, part shade/part sun, shade
-    height: [], 
-    moisture: [],
-    search: ""
-  });
+  const searchParams = useSearchParams();
+const plants: Plant[] = plantJson.plants; 
+
+  const [filters, setFilters] = useState<Filters>(() =>
+    getFiltersFromURL(searchParams)
+  );
   const [sliderValue, setSliderValue] = useState<number>(250);
   const [searchValue, setSearchValue] = useState<string>("");
+  const pathName = usePathname();
+  const router = useRouter();
 
-  useEffect(() => {
-    setPlants(plantJson.plants);
+  // Pagination - display 12 plants on desktop, 8 on tablet/mobile
+  const [pageSize, setPage] = useState<number>(8);
+  const [currentPage, setCurrentPage] = useState(1);
+  console.log("current page: ", currentPage)
+    useEffect(() => {
+    const largerThanTablet = window.innerWidth > 1024;
+    if (largerThanTablet) {
+      setPage(12);
+    } else {
+      setPage(8);
+    }
   }, []);
 
-  let filteredPlants = plants.filter(
-    (plant) => matchesType(plant, filters) &&
+  useEffect(() => {
+    setFilters(getFiltersFromURL(searchParams));
+  }, [searchParams]);
+
+  function handleFilterChange(updated: Filters) {
+    setFilters(updated);
+    updateURL(updated, pathName, router);
+  }
+
+ const filteredPlants = useMemo(() => {
+  return plants.filter(
+    (plant) =>
+      matchesType(plant, filters) &&
       matchesCanopy(plant, filters) &&
       matchesSun(plant, filters) &&
       matchesMoisture(plant, filters) &&
       matchesHeight(plant, filters) &&
       matchesSearch(plant, filters)
   );
-    console.log("Filters: ", filters);
-    console.log("Filtered plants: ", filteredPlants)
+}, [plants, filters]);
 
+  const currentFilteredPlants = filteredPlants.slice((currentPage - 1) * pageSize, currentPage * pageSize);
+
+  // Console logs
+  console.log("current plants: ", currentFilteredPlants)
+  console.log("Filters: ", filters);
+  console.log("Filtered plants: ", filteredPlants)
 
   // If all filters are deselected, reset the json
-  useEffect(() => {
-    if (filters.type.length === 0 &&
-        filters.canopy.length === 0 &&
-        filters.sun.length === 0 &&
-        filters.moisture.length === 0) {
-      setPlants(plantJson.plants);
-
-    }
-  }, [filters]);
+  // useEffect(() => {
+  //   if (filters.type.length === 0 &&
+  //       filters.canopy.length === 0 &&
+  //       filters.sun.length === 0 &&
+  //       filters.moisture.length === 0) {
+  //     setPlants(plantJson.plants);
+  //   }
+  // }, [filters]);
 
   function resetFilters(){
     setFilters ({
@@ -66,6 +92,7 @@ export default function Home() {
       moisture: [],
       search: "",
     })
+    router.replace(pathName); 
     setSliderValue(250);
     setSearchValue("");
   }
@@ -86,13 +113,16 @@ export default function Home() {
               plants={plants} 
               resultsSize={filteredPlants.length} 
               filters={filters} 
-              onFilterChangeAction={setFilters}
+              onFilterChangeAction={handleFilterChange}
               resetFiltersAction={resetFilters}
               sliderValue={sliderValue}
               setSliderValueAction={setSliderValue}
             />
             <MainContent 
-              plants={filteredPlants}
+              plants={currentFilteredPlants} 
+              currentPage={currentPage}
+              pageSize={Math.ceil(filteredPlants.length / pageSize)} 
+              setCurrentPage={setCurrentPage}
             />
         </div>
       </main>
@@ -100,4 +130,3 @@ export default function Home() {
     </div>
   );
 }
-

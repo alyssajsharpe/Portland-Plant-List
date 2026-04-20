@@ -44,13 +44,7 @@ export default async function PlantPage({
           </div>
         </div>   
         <div className={styles.imageWrapper}>
-            {/* <Carousel plant={plant}/> */}
-             <Image
-              src={plant?.images && plant?.images[0] || placeholder}
-              height={400}
-              width={400}
-              alt={`Picture of ${plant?.scientific_name}`}
-            />
+            <Carousel plant={plant}/>
         </div>
       </div>
     </div>

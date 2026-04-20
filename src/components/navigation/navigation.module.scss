@@ -49,8 +49,10 @@
 
             @media screen and (max-width: 600px) {
                 width: 100%;
-                justify-content: left;
+                justify-content: center;
+                display: block;
                 button {
+                    margin-top: 10px;
                     width: 100%;
                 }
             }

@@ -2,7 +2,7 @@
 @use '@/styles/_variables.module' as *;
 
 .embla {
-  max-width: 400px;
+  max-width: 100%;
 }
 
 .embla__viewport {
@@ -17,4 +17,6 @@
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+  max-height: 500px;
+
 }

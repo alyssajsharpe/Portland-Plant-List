@@ -4,9 +4,15 @@ import styles from "./main.module.scss";
 import placeholder from "../../public/placeholder.png";
 
 export default function MainContent({
-  plants
+  plants,
+  pageSize,
+  setCurrentPage,
+  currentPage
 } : {
-  plants: Plant[]
+  plants: Plant[],
+  pageSize: number,
+  setCurrentPage: any,
+  currentPage: number
 }) {
 
   return (
@@ -29,6 +35,11 @@ export default function MainContent({
             </div>
           </a>
         ))};
+        </div>
+        <div className={styles.paginationButtons}>
+           <button className="button contrast" onClick={() => setCurrentPage((p: number) => Math.max(p - 1, 1))}> Prev</button>
+           <p>Page: {currentPage}/{pageSize}</p>
+          <button className="button primary" onClick={() => setCurrentPage((p: number) => Math.min(p + 1, pageSize))}> Next</button>       
         </div>
       </div>
     </>
