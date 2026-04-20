@@ -14,15 +14,14 @@ import { getFiltersFromURL, updateURL } from "@/helpers/misc";
 
 // Todo
 // ----------------------------------------------------
-// Pagination
-// Fix carousel on plant pages
 // Update plant page UI
-// Sdd more images to plant json
-// Browser back button from plant page doesn't refresh list
+// Add more images to plant json
+// Fix suspense error, move code from home into new client component, keep this page server.
 
 export default function Home() {
+
   const searchParams = useSearchParams();
-const plants: Plant[] = plantJson.plants; 
+  const plants: Plant[] = plantJson.plants; 
 
   const [filters, setFilters] = useState<Filters>(() =>
     getFiltersFromURL(searchParams)
@@ -72,16 +71,6 @@ const plants: Plant[] = plantJson.plants;
   console.log("current plants: ", currentFilteredPlants)
   console.log("Filters: ", filters);
   console.log("Filtered plants: ", filteredPlants)
-
-  // If all filters are deselected, reset the json
-  // useEffect(() => {
-  //   if (filters.type.length === 0 &&
-  //       filters.canopy.length === 0 &&
-  //       filters.sun.length === 0 &&
-  //       filters.moisture.length === 0) {
-  //     setPlants(plantJson.plants);
-  //   }
-  // }, [filters]);
 
   function resetFilters(){
     setFilters ({
