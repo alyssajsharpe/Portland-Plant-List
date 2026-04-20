@@ -17,8 +17,8 @@ export function matchesCanopy(plant: Plant, filters: Filters): boolean {
     (filters.canopy.includes("Small Tree") && plant.classification === "Small Tree") || 
     (filters.canopy.includes("Large Shrub") && plant.classification === "Large Shrub") || 
     (filters.canopy.includes("Small Shrub") && plant.classification === "Small Shrub") || 
-    (filters.canopy.includes("Ground Cover") && plant.classification === "Grass/Sedge/Rush" ||
-        plant.classification === "Forb")
+    (filters.canopy.includes("Ground Cover") && plant.classification === "Grass/Sedge/Rush") ||
+    (filters.canopy.includes("Ground Cover") && plant.classification === "Forb")
   );
 }
 
