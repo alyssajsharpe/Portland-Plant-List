@@ -77,6 +77,17 @@ export default function Sidebar({
     onFilterChangeAction({...filters, height: updatedHeight});
   }
 
+   function updateRankFilter(value: string, checked: boolean) {
+    const currentRank = filters.invasive_rank ?? [];
+    let updatedRank: string[];
+
+    if (checked) { updatedRank = [...currentRank, value];
+    } else {updatedRank = currentRank.filter((v) => v !== value);}
+
+    onFilterChangeAction({...filters, invasive_rank: updatedRank});
+  }
+
+
   return (
     <div className={styles.sidebarWrapper}>
       <h3>Total plants ({resultsSize})</h3>
@@ -105,6 +116,39 @@ export default function Sidebar({
               </div>
             </div>
           </div>
+          {/* Invasive rank */}
+          {/* <div className={styles.filter}>
+            <h5>Rank</h5>
+            <div className={styles.items}>
+              <div className={styles.itemWrapper}>
+                <label className="checkbox">
+                  <input type="checkbox" value="silver" 
+                    onChange={(e) => updateRankFilter(e.target.value, e.target.checked)} 
+                    checked={filters.type.includes("silver")}/>
+                  <span className="checkmark"></span>
+                   Silver
+                </label>
+              </div>
+              <div className={styles.itemWrapper}>
+                <label className="checkbox">
+                  <input type="checkbox" value="gold" 
+                    onChange={(e) => updateRankFilter(e.target.value, e.target.checked)} 
+                    checked={filters.type.includes("gold")}/>
+                  <span className="checkmark"></span>
+                  Gold
+                </label>
+              </div>
+               <div className={styles.itemWrapper}>
+                <label className="checkbox">
+                  <input type="checkbox" value="platinum" 
+                    onChange={(e) => updateRankFilter(e.target.value, e.target.checked)} 
+                    checked={filters.type.includes("platinum")}/>
+                  <span className="checkmark"></span>
+                  Platinum
+                </label>
+              </div>
+            </div>
+          </div> */}
           {/* Canopy */}
           <div className={styles.filter}>
             <h5>Canopy</h5>

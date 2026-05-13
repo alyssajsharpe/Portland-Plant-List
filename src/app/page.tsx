@@ -8,7 +8,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Filters, Plant } from "../helpers/types";
 import Footer from "../components/navigation/Footer";
 import Navigation from "../components/navigation/Navigation";
-import {matchesType, matchesCanopy, matchesSun, matchesMoisture, matchesHeight, matchesSearch }from "../helpers/filterFunctions";
+import {matchesType, matchesCanopy, matchesSun, matchesMoisture, matchesHeight, matchesSearch, matchesRank }from "../helpers/filterFunctions";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { getFiltersFromURL, updateURL } from "@/helpers/misc";
 
@@ -34,7 +34,6 @@ export default function Home() {
   // Pagination - display 12 plants on desktop, 8 on tablet/mobile
   const [pageSize, setPage] = useState<number>(8);
   const [currentPage, setCurrentPage] = useState(1);
-  console.log("current page: ", currentPage)
     useEffect(() => {
     const largerThanTablet = window.innerWidth > 1024;
     if (largerThanTablet) {
@@ -61,16 +60,17 @@ export default function Home() {
       matchesSun(plant, filters) &&
       matchesMoisture(plant, filters) &&
       matchesHeight(plant, filters) &&
-      matchesSearch(plant, filters)
+      matchesSearch(plant, filters) &&
+      matchesRank(plant, filters)
   );
 }, [plants, filters]);
 
   const currentFilteredPlants = filteredPlants.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
   // Console logs
-  console.log("current plants: ", currentFilteredPlants)
-  console.log("Filters: ", filters);
-  console.log("Filtered plants: ", filteredPlants)
+  // console.log("current plants: ", currentFilteredPlants)
+  // console.log("Filters: ", filters);
+  // console.log("Filtered plants: ", filteredPlants)
 
   function resetFilters(){
     setFilters ({
@@ -80,13 +80,14 @@ export default function Home() {
       height: [], 
       moisture: [],
       search: "",
+      invasive_rank: []
     })
     router.replace(pathName); 
     setSliderValue(250);
     setSearchValue("");
   }
 
-  console.log("filtered plants: ", filteredPlants);
+  // console.log("filtered plants: ", filteredPlants);
   return (
     <div className={styles.page}>
       <Navigation/>
@@ -117,5 +118,5 @@ export default function Home() {
       </main>
       <Footer />
     </div>
-  );
+  )
 }

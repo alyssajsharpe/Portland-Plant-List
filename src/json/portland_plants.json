@@ -122,7 +122,8 @@
     "sun_requirement": ["Full Sun", "Part Shade"],
     "moisture_conditions": "Moist",
     "native_to_portland": true,
-    "notes": "Leaves tremble in the slightest breeze. Spreads by root sprouts."
+    "notes": "Leaves tremble in the slightest breeze. Spreads by root sprouts.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710092/original_56_tbv9qc.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710092/original_58_epzdql.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710092/original_57_kgn7nr.jpg"]
   },
   {
     "id": 10,
@@ -134,7 +135,8 @@
     "sun_requirement": ["Full Sun", "Part Shade"],
     "moisture_conditions": "Any moisture",
     "native_to_portland": true,
-    "notes": "Largest native poplar. Fast growing riparian tree."
+    "notes": "Largest native poplar. Fast growing riparian tree.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710166/original_59_kztqer.jpg"]
   },
   {
     "id": 11,
@@ -146,7 +148,8 @@
     "sun_requirement": ["Full Sun", "Part Shade"],
     "moisture_conditions": "Any moisture",
     "native_to_portland": true,
-    "notes": "Oregon's state tree. Dominant conifer of the Pacific Northwest."
+    "notes": "Oregon's state tree. Dominant conifer of the Pacific Northwest.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710227/original_60_eac9dv.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710226/original_62_x2qelq.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710224/original_61_r3moda.jpg"]
   },
   {
     "id": 12,
@@ -158,7 +161,8 @@
     "sun_requirement": ["Full Sun"],
     "moisture_conditions": "Dry",
     "native_to_portland": true,
-    "notes": "Only native oak in Oregon. High wildlife value. Savanna species."
+    "notes": "Only native oak in Oregon. High wildlife value. Savanna species.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710325/original_63_okhxl1.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710325/original_64_ggax3o.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710325/original_65_tyuqag.jpg"]
   },
   {
     "id": 13,
@@ -170,7 +174,8 @@
     "sun_requirement": ["Full Sun", "Part Shade"],
     "moisture_conditions": "Moist-seasonally wet",
     "native_to_portland": true,
-    "notes": "Riparian tree. Good for streambank stabilization."
+    "notes": "Riparian tree. Good for streambank stabilization.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710366/original_66_qszi43.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710365/original_67_de0exh.jpg"]
   },
   {
     "id": 14,
@@ -1802,7 +1807,8 @@
     "moisture_conditions": "Moist",
     "native_to_portland": true,
     "bloom_season": "Spring",
-    "notes": "Small wood sorrel with white flowers. Shade groundcover."
+    "notes": "Small wood sorrel with white flowers. Shade groundcover.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710450/original_68_zgqcy4.jpg", "https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710449/original_69_rm0iax.jpg"]
   },
   {
     "id": 139,
@@ -1815,7 +1821,8 @@
     "moisture_conditions": "Dry-moist",
     "native_to_portland": true,
     "bloom_season": "Early Spring",
-    "notes": "One of the earliest spring bloomers. Reddish-purple flowers."
+    "notes": "One of the earliest spring bloomers. Reddish-purple flowers.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710535/original_70_bblhex.jpg", "https://res.cloudinary.com/dsp2gizvg/image/upload/v1778710536/original_71_naur1s.jpg"]
   },
   {
     "id": 140,
@@ -1829,7 +1836,8 @@
     "native_to_portland": true,
     "bloom_season": "Late Spring-Summer",
     "wildlife_value": "Flowers attract hummingbirds and bumblebees",
-    "notes": "Blue-purple penstemon. One of the more adaptable native penstemons."
+    "notes": "Blue-purple penstemon. One of the more adaptable native penstemons.",
+    "images": ["", ""]
   },
   {
     "id": 141,
@@ -1842,7 +1850,8 @@
     "moisture_conditions": "Dry",
     "native_to_portland": true,
     "bloom_season": "Summer",
-    "notes": "Deeply cut leaves. Lavender-pink flowers. Cliff and rocky slope species."
+    "notes": "Deeply cut leaves. Lavender-pink flowers. Cliff and rocky slope species.",
+    "images": ["", ""]
   },
   {
     "id": 142,

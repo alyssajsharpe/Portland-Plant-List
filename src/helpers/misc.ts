@@ -8,7 +8,7 @@ export function getFiltersFromURL(params: URLSearchParams): Filters {
     sun: params.get("sun")?.split(",") ?? [],
     height: params.get("height")?.split(",") ?? [],
     moisture: params.get("moisture")?.split(",") ?? [],
-    search: params.get("search") ?? ""
+    search: params.get("search") ?? "",
   };
 }
 
@@ -23,7 +23,6 @@ export function updateURL(filters: Filters, pathname: string, router: AppRouterI
   if (filters.canopy.length > 0)
     params.set("canopy", filters.canopy.join(","));
 
-  console.log("filter height: ", filters.height)
   if (filters.height.length > 0)
     params.set("height", filters.height.join(","));
 

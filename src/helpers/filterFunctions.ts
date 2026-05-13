@@ -65,3 +65,13 @@ export function matchesSearch(plant: Plant, filters: Filters): boolean {
     (cleanedCommonName.includes(cleanedSearch)) || (cleanedScientificName.includes(cleanedSearch))
   );
 }
+
+export function matchesRank(plant: Plant, filters: Filters): boolean {
+   if (!filters.invasive_rank ) return true;
+
+  return (
+    (filters.invasive_rank.includes("silver") && plant.invasive_rank === "Silver") ||
+    (filters.invasive_rank.includes("gold") && plant.invasive_rank === "Gold") || 
+    (filters.invasive_rank.includes("platinum") && plant.invasive_rank === "Platinum")
+  );
+}

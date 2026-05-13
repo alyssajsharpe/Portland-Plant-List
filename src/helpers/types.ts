@@ -29,4 +29,5 @@ export interface Filters {
   height: string[];
   moisture: string[];
   search: string;
+  invasive_rank?: string[];
 }
