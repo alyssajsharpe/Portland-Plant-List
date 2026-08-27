@@ -209,8 +209,8 @@ button {
 .checkmark::after {
   content: "";
   position: absolute;
-  left: 4px;
-  top: 0px;
+    top: 4px;
+    left: 10px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -221,30 +221,19 @@ button {
 
 /* Checked state */
 .checkbox input:checked + .checkmark {
-  background-color: #ccc;
+  background-color: #345a69;
 }
 
 .checkbox input:checked + .checkmark::after {
   transform: rotate(45deg) scale(1);
+  justify-content: center;
 }
-
-
-// Carousel slider
-.embla__viewport {
-  overflow: hidden;
-}
-
-.embla__container {
-  display: flex;
-  touch-action: pan-y pinch-zoom;
-}
-
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-}
-
 
 .mtb-10 {
   margin: 10px 0;
+}
+
+// Carousel
+.swiper {
+        height: 100%;
 }

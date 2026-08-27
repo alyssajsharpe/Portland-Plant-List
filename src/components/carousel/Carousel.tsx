@@ -1,56 +1,46 @@
 "use client"
 import Image from "next/image";
 import styles from "./carousel.module.scss";
-import useEmblaCarousel from 'embla-carousel-react'
 import placeholder from "../../../public/placeholder.png";
-import { Plant } from "@/helpers/types";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { Key } from "react";
+
+// Swiper
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+
 
 export default function Carousel({
   plant
 }:{
   plant: any
 }) {
-
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false })
-  // const goToPrev = () => emblaApi?.goToPrev()
-  // const goToNext = () => emblaApi?.goToNext()
-
   return (
-    <div className={styles.embla}>
-        <div className={styles.embla__viewport} ref={emblaRef}>
-          <div className={styles.embla__container}>
-            {plant.images && plant.images.length > 0 ? (
+
+      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+        {plant.images && plant.images.length > 0 ? (
               plant.images.map((image: string | StaticImport, i: Key | null | undefined) => (
-                <div className={styles.embla__slide} key={i}>
-                  <Image
-                    src={image}
-                    height={400}
-                    width={400}
+                 <SwiperSlide>
+                      <Image loading="eager"
+                      src={image}
+                      height={400}
+                      width={400}
                     alt={`Picture of ${plant.scientific_name}`}
-                  />
-                </div>
+                    />
+                 </SwiperSlide>
               ))
             ) : (
-              <div className={styles.embla__slide}>
-                <Image
-                  src={placeholder}
-                  height={400}
-                  width={400}
-                  alt="Placeholder image"
-                />
-              </div>
+               <SwiperSlide>
+                      <Image loading="eager"
+                      src={placeholder}
+                      height={400}
+                      width={400}
+                    alt={`Placeholder Image`}
+                    />
+                 </SwiperSlide>
             )}
-          </div>
-        </div>
-
-          {/* <button className="embla__prev" onClick={goToPrev}>
-            Scroll to prev
-          </button>
-          <button className="embla__next" onClick={goToNext}>
-            Scroll to next
-          </button> */}
-    </div>
+    </Swiper>
   );
 }

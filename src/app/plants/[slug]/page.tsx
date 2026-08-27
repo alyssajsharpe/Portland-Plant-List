@@ -4,10 +4,7 @@ import Navigation from "@/components/navigation/Navigation";
 import Footer from "@/components/navigation/Footer";
 import plantJson from "@/json/portland_plants.json";
 import { JSX } from "react";
-import Image from "next/image";
-import useEmblaCarousel from 'embla-carousel-react'
 import Carousel from "@/components/carousel/Carousel";
-import placeholder from "../../../../public/placeholder.png";
 
 export default async function PlantPage({
   params

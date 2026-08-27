@@ -24,7 +24,6 @@
  .contentWrapper {
     display: flex;
     flex-direction: row;
-    //gap: 40px;
 
      @media screen and (max-width: 1024px) {
         flex-direction: column;
@@ -89,6 +88,9 @@
         height: 100%;
         border-top-right-radius: 16px;
         border-bottom-right-radius: 16px;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        max-height: 600px;
 
         @media screen and (max-width: 1024px) {
             border-top-left-radius: 0;

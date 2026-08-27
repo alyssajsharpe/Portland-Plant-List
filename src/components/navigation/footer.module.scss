@@ -74,6 +74,10 @@
 
             @media screen and (max-width: 650px) {
                 flex-direction: column;
+
+                a {
+                    width: 100%;
+                }
             }
 
             p {

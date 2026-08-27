@@ -187,7 +187,8 @@
     "sun_requirement": ["Full Sun", "Part Shade"],
     "moisture_conditions": "Moist-seasonally wet",
     "native_to_portland": true,
-    "notes": "Adaptable willow found in a variety of habitats."
+    "notes": "Adaptable willow found in a variety of habitats.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850139/original_ufdwzi.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850139/original_1_jto13f.jpg"]
   },
   {
     "id": 15,
@@ -199,7 +200,8 @@
     "sun_requirement": ["Full Sun", "Part Shade", "Full Shade"],
     "moisture_conditions": "Moist-seasonally wet",
     "native_to_portland": true,
-    "notes": "Slow-growing understory conifer. Source of taxol cancer treatment."
+    "notes": "Slow-growing understory conifer. Source of taxol cancer treatment.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850195/original_2_jocbhr.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850195/original_3_pjljwp.jpg", "https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850195/original_4_lhbogh.jpg"]
   },
   {
     "id": 16,
@@ -211,7 +213,8 @@
     "sun_requirement": ["Full Sun", "Part Shade", "Full Shade"],
     "moisture_conditions": "Moist-seasonally wet",
     "native_to_portland": true,
-    "notes": "State tree of Washington. Tolerates deep shade."
+    "notes": "State tree of Washington. Tolerates deep shade.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850319/original_6_t6sx5u.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850319/original_7_j9nmh7.jpg"]
   },
   {
     "id": 17,
@@ -223,7 +226,8 @@
     "sun_requirement": ["Full Sun", "Part Shade"],
     "moisture_conditions": "Moist-seasonally wet",
     "native_to_portland": true,
-    "notes": "Long-lived, rot-resistant conifer. Important cultural tree for Indigenous peoples."
+    "notes": "Long-lived, rot-resistant conifer. Important cultural tree for Indigenous peoples.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850380/original_9_nkttko.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850381/original_8_wlqjkj.jpg"]
   },
   {
     "id": 18,
@@ -237,11 +241,12 @@
     "native_to_portland": true,
     "bloom_season": "Spring",
     "wildlife_value": "Berries attract birds",
-    "notes": "Thorny native tree. Dense thickets provide excellent wildlife cover."
+    "notes": "Thorny native tree. Dense thickets provide excellent wildlife cover.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850624/original_10_hfv8vd.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850623/original_12_bhbrtm.jpg", "https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850625/original_11_eqow1a.jpg"]
   },
   {
     "id": 19,
-    "common_name": "Western Crabapple",
+    "common_name": "Western / Pacific / Oregon Crabapple",
     "scientific_name": "Malus fusca",
     "classification": "Small Tree",
     "category": "Tree",
@@ -251,7 +256,8 @@
     "native_to_portland": true,
     "bloom_season": "Spring",
     "wildlife_value": "Fruit eaten by birds and mammals",
-    "notes": "Only native apple in the Pacific Northwest."
+    "notes": "Only native apple in the Pacific Northwest.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850779/original_13_ryedk9.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850779/original_i4mobz.jpg"]
   },
   {
     "id": 20,
@@ -265,7 +271,8 @@
     "native_to_portland": true,
     "bloom_season": "Spring",
     "wildlife_value": "Cherries eaten by birds",
-    "notes": "Small native cherry. Bitter fruit not palatable to humans but loved by wildlife."
+    "notes": "Small native cherry. Bitter fruit not palatable to humans but loved by wildlife.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850866/original_14_qvwdb9.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850866/original_15_wbpkg3.jpg"]
   },
   {
     "id": 21,
@@ -278,7 +285,8 @@
     "moisture_conditions": "Moist-seasonally wet",
     "native_to_portland": true,
     "wildlife_value": "Berries eaten by birds",
-    "notes": "Bark historically used as a laxative. Good understory tree."
+    "notes": "Bark historically used as a laxative. Good understory tree.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850913/original_17_ofcaga.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787850914/original_18_tz18zt.jpg"]
   },
   {
     "id": 22,
@@ -290,7 +298,8 @@
     "sun_requirement": ["Full Sun", "Part Shade"],
     "moisture_conditions": "Moist-seasonally wet",
     "native_to_portland": true,
-    "notes": "Riparian shrub/small tree. Good for erosion control along streams."
+    "notes": "Riparian shrub/small tree. Good for erosion control along streams.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851111/original_19_j0gecp.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851111/original_20_b2cm6v.jpg"]
   },
   {
     "id": 23,
@@ -304,7 +313,8 @@
     "native_to_portland": true,
     "bloom_season": "Early Spring",
     "wildlife_value": "Berries highly attractive to birds",
-    "notes": "Early-blooming shrub with edible berries. Excellent wildlife plant."
+    "notes": "Early-blooming shrub with edible berries. Excellent wildlife plant.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851149/original_21_isvgvc.jpg"]
   },
   {
     "id": 24,
@@ -317,7 +327,8 @@
     "moisture_conditions": "Dry-moist",
     "native_to_portland": true,
     "bloom_season": "Winter-Spring",
-    "notes": "Evergreen shrub with distinctive red bark. Drought tolerant."
+    "notes": "Evergreen shrub with distinctive red bark. Drought tolerant.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851209/original_22_t2efys.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851210/original_24_gvyoog.jpg"]
   },
   {
     "id": 25,
@@ -331,7 +342,8 @@
     "native_to_portland": true,
     "bloom_season": "Spring",
     "wildlife_value": "Berries eaten by birds, thickets provide cover",
-    "notes": "Bright red stems provide winter color. Excellent riparian shrub."
+    "notes": "Bright red stems provide winter color. Excellent riparian shrub.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851311/original_26_xxm8se.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851311/original_25_xnclnc.jpg"]
   },
   {
     "id": 26,
@@ -344,11 +356,12 @@
     "moisture_conditions": "Moist",
     "native_to_portland": true,
     "wildlife_value": "Nuts eaten by birds and mammals",
-    "notes": "Native hazelnut produces edible nuts. Tolerates a range of conditions."
+    "notes": "Native hazelnut produces edible nuts. Tolerates a range of conditions.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851382/original_27_brsbfq.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851383/original_28_cirv81.jpg"]
   },
   {
     "id": 27,
-    "common_name": "Western Wahoo",
+    "common_name": "Western Wahoo (Western Burning Bush)",
     "scientific_name": "Euonymus occidentalis",
     "classification": "Large Shrub",
     "category": "Shrub",
@@ -356,7 +369,8 @@
     "sun_requirement": ["Full Sun", "Part Shade", "Full Shade"],
     "moisture_conditions": "Moist",
     "native_to_portland": true,
-    "notes": "Uncommon native shrub with attractive fall color."
+    "notes": "Uncommon native shrub with attractive fall color.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851471/original_29_patvc8.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851471/original_30_vrzxyf.jpg"]
   },
   {
     "id": 28,
@@ -370,11 +384,12 @@
     "native_to_portland": true,
     "bloom_season": "Summer",
     "wildlife_value": "Flowers attract pollinators, seeds eaten by birds",
-    "notes": "Drought tolerant once established. Cascading white flower clusters."
+    "notes": "Drought tolerant once established. Cascading white flower clusters.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851526/original_32_s2oeat.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851526/original_31_qwndpi.jpg", "https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851525/original_33_jqfeqv.jpg"]
   },
   {
     "id": 29,
-    "common_name": "Black Twinberry",
+    "common_name": "Black Twinberry (Twinberry Honeysuckle)",
     "scientific_name": "Lonicera involucrata",
     "classification": "Large Shrub",
     "category": "Shrub",
@@ -384,7 +399,8 @@
     "native_to_portland": true,
     "bloom_season": "Spring-Summer",
     "wildlife_value": "Berries eaten by birds",
-    "notes": "Native honeysuckle with distinctive paired black berries."
+    "notes": "Native honeysuckle with distinctive paired black berries.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851612/original_34_pf4tzn.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851613/original_35_pinycm.jpg"]
   },
   {
     "id": 30,
@@ -398,7 +414,8 @@
     "native_to_portland": true,
     "bloom_season": "Spring",
     "wildlife_value": "Berries eaten by birds, flowers attract pollinators",
-    "notes": "Oregon's state flower. Evergreen shrub with yellow flowers and blue berries."
+    "notes": "Oregon's state flower. Evergreen shrub with yellow flowers and blue berries.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851664/original_36_el8ijy.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851665/original_37_zz6ovz.jpg"]
   },
   {
     "id": 31,
@@ -412,7 +429,8 @@
     "native_to_portland": true,
     "bloom_season": "Late Winter-Early Spring",
     "wildlife_value": "Fruits eaten by birds, very early bloom for pollinators",
-    "notes": "One of the first shrubs to bloom in spring. Plum-like fruit."
+    "notes": "One of the first shrubs to bloom in spring. Plum-like fruit.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851836/original_39_ohfmyz.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851836/original_41_gzawfi.jpg", "https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851835/original_40_iph7qg.jpg"]
   },
   {
     "id": 32,
@@ -425,7 +443,8 @@
     "moisture_conditions": "Dry-moist",
     "native_to_portland": true,
     "bloom_season": "Late Spring-Summer",
-    "notes": "Idaho's state flower. Fragrant white flowers."
+    "notes": "Idaho's state flower. Fragrant white flowers.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851930/original_43_g02joy.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851929/original_44_qqjj9m.jpg"]
   },
   {
     "id": 33,
@@ -438,7 +457,8 @@
     "moisture_conditions": "Moist-seasonally wet",
     "native_to_portland": true,
     "bloom_season": "Spring",
-    "notes": "Exfoliating bark. White flower clusters. Good riparian shrub."
+    "notes": "Exfoliating bark. White flower clusters. Good riparian shrub.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851997/original_45_xdedh9.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851995/original_47_qb588e.jpg", "https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851996/original_46_qbvnib.jpg"]
   },
   {
     "id": 34,
@@ -452,11 +472,12 @@
     "native_to_portland": true,
     "bloom_season": "Spring",
     "wildlife_value": "Cherries eaten by many birds and mammals",
-    "notes": "Highly productive wildlife plant. Tart edible fruit."
+    "notes": "Highly productive wildlife plant. Tart edible fruit.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852066/original_48_ujd2tu.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852065/original_49_eb3ey6.jpg"]
   },
   {
     "id": 35,
-    "common_name": "Wild Gooseberry",
+    "common_name": "Wild Gooseberry (Spreading Gooseberry)",
     "scientific_name": "Ribes divaricatum",
     "classification": "Large Shrub",
     "category": "Shrub",
@@ -465,7 +486,8 @@
     "moisture_conditions": "Moist",
     "native_to_portland": true,
     "wildlife_value": "Berries eaten by birds and mammals",
-    "notes": "Thorny native gooseberry with edible fruit."
+    "notes": "Thorny native gooseberry with edible fruit.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852124/original_50_ztkljk.jpg"]
   },
   {
     "id": 36,
@@ -478,7 +500,8 @@
     "moisture_conditions": "Moist-seasonally wet",
     "native_to_portland": true,
     "wildlife_value": "Berries eaten by birds",
-    "notes": "Large native currant with blue-black berries. Pungent foliage."
+    "notes": "Large native currant with blue-black berries. Pungent foliage.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852166/original_51_p5if8p.jpg"]
   },
   {
     "id": 37,
@@ -492,7 +515,8 @@
     "native_to_portland": true,
     "bloom_season": "Early Spring",
     "wildlife_value": "Flowers attract hummingbirds, berries eaten by birds",
-    "notes": "Showy spring-blooming shrub. Excellent hummingbird plant."
+    "notes": "Showy spring-blooming shrub. Excellent hummingbird plant.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852235/original_52_ipevet.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852233/original_53_nvkyyb.jpg", "https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852234/original_54_msfjxe.jpg"]
   },
   {
     "id": 38,
@@ -506,7 +530,8 @@
     "native_to_portland": true,
     "bloom_season": "Late Spring-Summer",
     "wildlife_value": "Rose hips eaten by birds and mammals, thickets provide nesting cover",
-    "notes": "Fragrant pink flowers. Thorny thickets provide excellent wildlife cover."
+    "notes": "Fragrant pink flowers. Thorny thickets provide excellent wildlife cover.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852304/original_56_pa07j1.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852305/original_55_qsa3tk.jpg"]
   },
   {
     "id": 39,
@@ -520,7 +545,8 @@
     "native_to_portland": true,
     "bloom_season": "Summer",
     "wildlife_value": "Rose hips eaten by birds",
-    "notes": "Native rose for wetter sites. Small pink clustered flowers."
+    "notes": "Native rose for wetter sites. Small pink clustered flowers.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852359/original_57_smso0b.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852355/original_59_iwvrr9.jpg", "https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852357/original_58_d0mic3.jpg"]
   },
   {
     "id": 40,
@@ -534,7 +560,8 @@
     "native_to_portland": true,
     "bloom_season": "Late Spring-Summer",
     "wildlife_value": "Fruit eaten by birds and mammals",
-    "notes": "Large maple-like leaves. Thornless. Edible red raspberries."
+    "notes": "Large maple-like leaves. Thornless. Edible red raspberries.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852418/original_60_orz8c6.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852418/original_61_tyunsb.jpg"]
   },
   {
     "id": 41,
@@ -548,7 +575,8 @@
     "native_to_portland": true,
     "bloom_season": "Early Spring",
     "wildlife_value": "Berries eaten by many birds, early flowers for hummingbirds",
-    "notes": "Very early spring bloomer. Salmon to red edible berries."
+    "notes": "Very early spring bloomer. Salmon to red edible berries.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852477/original_62_t3c3at.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852476/original_63_rpxj7a.jpg"]
   },
   {
     "id": 42,
@@ -560,7 +588,8 @@
     "sun_requirement": ["Full Sun"],
     "moisture_conditions": "Any moisture",
     "native_to_portland": true,
-    "notes": "Riparian willow. Important for streambank stabilization."
+    "notes": "Riparian willow. Important for streambank stabilization.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852572/medium_1_ksshhu.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852574/medium_vmvhn7.jpg"]
   },
   {
     "id": 43,
@@ -572,12 +601,13 @@
     "sun_requirement": ["Full Sun"],
     "moisture_conditions": "Moist-seasonally wet",
     "native_to_portland": true,
-    "notes": "Coastal and riparian willow."
+    "notes": "Coastal and riparian willow.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852642/original_65_jjg9pu.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852644/original_64_s1s0zb.jpg"]
   },
   {
     "id": 44,
     "common_name": "Blue Elderberry",
-    "scientific_name": "Sambucus cerulean",
+    "scientific_name": "Sambucus cerulea",
     "classification": "Large Shrub",
     "category": "Shrub",
     "max_height_ft": 20,
@@ -586,7 +616,8 @@
     "native_to_portland": true,
     "bloom_season": "Spring-Summer",
     "wildlife_value": "Berries highly attractive to birds",
-    "notes": "Large native elderberry. Blue-black berries edible when cooked."
+    "notes": "Large native elderberry. Blue-black berries edible when cooked.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852705/original_66_jeuc67.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852702/original_67_zvsx20.jpg"]
   },
   {
     "id": 45,
@@ -600,7 +631,8 @@
     "native_to_portland": true,
     "bloom_season": "Spring",
     "wildlife_value": "Berries eaten by birds",
-    "notes": "Red berries are toxic to humans. Excellent bird plant."
+    "notes": "Red berries are toxic to humans. Excellent bird plant.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852773/original_68_w7soch.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852772/original_69_agoltb.jpg"]
   },
   {
     "id": 46,
@@ -613,7 +645,8 @@
     "moisture_conditions": "Dry-moist",
     "native_to_portland": true,
     "wildlife_value": "Berries eaten by birds and mammals",
-    "notes": "Evergreen shrub with edible black berries. Shade tolerant."
+    "notes": "Evergreen shrub with edible black berries. Shade tolerant.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852839/original_71_bcatob.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852838/original_72_pvcwcv.jpg", "https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852840/original_70_kivnix.jpg"]
   },
   {
     "id": 47,
@@ -626,7 +659,8 @@
     "moisture_conditions": "Dry-moist",
     "native_to_portland": true,
     "wildlife_value": "Berries eaten by birds and mammals",
-    "notes": "Bright red edible berries. Often grows on rotting logs in shade."
+    "notes": "Bright red edible berries. Often grows on rotting logs in shade.",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852908/original_73_rlletl.jpg","https://res.cloudinary.com/dsp2gizvg/image/upload/v1787852908/original_74_k45f4n.jpg"]
   },
   {
     "id": 48,
@@ -736,7 +770,8 @@
     "native_to_portland": true,
     "bloom_season": "Early Spring",
     "wildlife_value": "Berries eaten by birds",
-    "notes": "Low-growing evergreen with yellow flowers and blue berries. Very shade tolerant."
+    "notes": "Low-growing evergreen with yellow flowers and blue berries. Very shade tolerant. ",
+    "images": ["https://res.cloudinary.com/dsp2gizvg/image/upload/v1787851748/original_38_cbdk3s.jpg"]
   },
   {
     "id": 56,
@@ -2521,7 +2556,7 @@
   },
   {
     "id": 192,
-    "common_name": "Old Man's Beard",
+    "common_name": "Travelers's Joy (Old Man's Beard)",
     "scientific_name": "Clematis vitalba",
     "classification": "Vine",
     "category": "Weed",
@@ -2538,7 +2573,7 @@
   },
   {
     "id": 193,
-    "common_name": "Scrotch Broom",
+    "common_name": "Scot's Broom",
     "scientific_name": "Cytisus scoparius",
     "classification": "Large Shrub",
     "category": "Weed",
@@ -2919,7 +2954,7 @@
   },
   {
     "id": 215,
-    "common_name": "Tree-of-Heaven (under 20ft)",
+    "common_name": "Tree of Heaven (under 20ft)",
     "scientific_name": "Ailanthus altissima",
     "classification": "Small Tree",
     "category": "Weed",
