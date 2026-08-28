@@ -9,32 +9,37 @@ export default function Sidebar({
   filters,
   resultsSize,
   sliderValue,
+  showFilters,
   onFilterChangeAction,
   resetFiltersAction,
-  setSliderValueAction
+  setSliderValueAction,
+  onShowFiltersChange
 } : {
   plants: Plant[]
   filters: Filters;
   resultsSize: number;
   sliderValue: number;
+  showFilters: boolean;
   onFilterChangeAction: (filters: Filters) => void;
   resetFiltersAction: () => void;
   setSliderValueAction: (value: number) => void;
+  //setShowFilters: React.Dispatch<React.SetStateAction<boolean>>;
+  onShowFiltersChange: (value: boolean) => void;
 }) {
 
-  const [showFilters, setShowFilters] = useState(true);
+  // const [showFilters, setShowFilters] = useState(true);
 
   useEffect(() => {
     const mobile = window.innerWidth <= 768;
     if (mobile) {
-      setShowFilters(false);
+      onShowFiltersChange(false);
     } else {
-      setShowFilters(true);
+      onShowFiltersChange(true);
     }
   }, []);
   
   function handleFilterDisplay() {
-    setShowFilters(prev => !prev);
+    onShowFiltersChange(!showFilters);
   }
   
   // Filter update functions

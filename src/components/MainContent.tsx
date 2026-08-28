@@ -20,7 +20,7 @@ export default function MainContent({
      <div className={styles.mainContentWrapper}>
       <div className={styles.cardsWrapper}>
         {plants.map((plant, i) => (
-          <a href={`/plants/${plant.id}`} key={i}>
+          <a href={`/plants/${plant.id}?page=${currentPage}`} key={i}>
             <div className={styles.card}  >
               <div className={styles.cardContent}>
                   <div className={styles.cardImage} 

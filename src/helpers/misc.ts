@@ -9,6 +9,7 @@ export function getFiltersFromURL(params: URLSearchParams): Filters {
     height: params.get("height")?.split(",") ?? [],
     moisture: params.get("moisture")?.split(",") ?? [],
     search: params.get("search") ?? "",
+    page: params.get("page") ?? ""
   };
 }
 

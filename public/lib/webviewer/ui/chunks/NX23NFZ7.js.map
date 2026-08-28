@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/ui/src/helpers/stamps.js"],
+  "sourcesContent": ["import getCurrentT from 'helpers/getCurrentT';\n\nexport const getDefaultStampCategory = () => {\n  const t = getCurrentT();\n  return t('option.customStampModal.customStamp', {\n    lng: 'en',\n    defaultValue: 'Custom Stamp',\n  });\n};"],
+  "mappings": "kFAAAA,IAAAC,IAAAC,IAEO,IAAMC,EAA0B,IAC3BC,EAAY,EACb,sCAAuC,CAC9C,IAAK,KACL,aAAc,cAChB,CAAC",
+  "names": ["init_dirname", "init_buffer", "init_process", "getDefaultStampCategory", "getCurrentT_default"]
+}

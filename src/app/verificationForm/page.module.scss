@@ -1,0 +1,11 @@
+@use '@/styles/_variables.module' as *;
+
+.page {
+    color: black;
+    padding: 40px;
+
+    p {
+        margin-bottom: 40px;
+    }
+
+}

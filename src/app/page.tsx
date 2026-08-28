@@ -12,35 +12,66 @@ import {matchesType, matchesCanopy, matchesSun, matchesMoisture, matchesHeight, 
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { getFiltersFromURL, updateURL } from "@/helpers/misc";
 
-// Todo
-// ----------------------------------------------------
-// Update plant page UI
-// Add more images to plant json
-// Fix suspense error, move code from home into new client component, keep this page server.
+// ************************************
+// TODO
+// ************************************
+// 
+// 
 
 export default function Home() {
-
   const searchParams = useSearchParams();
   const plants: Plant[] = plantJson.plants; 
-
   const [filters, setFilters] = useState<Filters>(() =>
     getFiltersFromURL(searchParams)
   );
+
   const [sliderValue, setSliderValue] = useState<number>(250);
   const [searchValue, setSearchValue] = useState<string>("");
   const pathName = usePathname();
   const router = useRouter();
+  const [showFilters, setShowFilters] = useState(true);
 
   // Pagination - display 12 plants on desktop, 8 on tablet/mobile
   const [pageSize, setPage] = useState<number>(8);
   const [currentPage, setCurrentPage] = useState(1);
-    useEffect(() => {
-    const largerThanTablet = window.innerWidth > 1024;
-    if (largerThanTablet) {
-      setPage(12);
-    } else {
-      setPage(8);
+
+  // When the user clicks on the prev/next buttons on tablet/mobile, they should be brought up to the top of the page. 
+  // If the filter is open, consider that with the window scroll. 
+  function resetUserViewOnClick(value: number) {
+    setCurrentPage(value);
+
+    let viewPoint = window.visualViewport;
+    if(viewPoint?.width && viewPoint?.width <= 1024) {
+      if(showFilters == true) {
+        // Adjust height for filters being open
+        window.scrollTo({
+          top: 1450,
+          left: 0,
+          behavior: "smooth" 
+        });
+      } else {
+        // Adjust height for filters being closed
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth" 
+        });
+      }
     }
+  }
+
+    useEffect(() => {
+      const largerThanTablet = window.innerWidth > 1024;
+      if(filters.page === "0"){
+        filters.page = "1";
+      }
+      // Update the page depending on the url parameters
+      setCurrentPage(filters.page ? Number(filters.page) : 1);
+      if (largerThanTablet) {
+        setPage(12);
+      } else {
+        setPage(8);
+      }
   }, []);
 
   useEffect(() => {
@@ -87,7 +118,6 @@ export default function Home() {
     setSearchValue("");
   }
 
-  // console.log("filtered plants: ", filteredPlants);
   return (
     <div className={styles.page}>
       <Navigation/>
@@ -103,16 +133,18 @@ export default function Home() {
               plants={plants} 
               resultsSize={filteredPlants.length} 
               filters={filters} 
+              showFilters={showFilters}
               onFilterChangeAction={handleFilterChange}
               resetFiltersAction={resetFilters}
               sliderValue={sliderValue}
               setSliderValueAction={setSliderValue}
+              onShowFiltersChange={setShowFilters}
             />
             <MainContent 
               plants={currentFilteredPlants} 
               currentPage={currentPage}
               pageSize={Math.ceil(filteredPlants.length / pageSize)} 
-              setCurrentPage={setCurrentPage}
+              setCurrentPage={resetUserViewOnClick}
             />
         </div>
       </main>

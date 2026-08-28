@@ -7,11 +7,14 @@ import { JSX } from "react";
 import Carousel from "@/components/carousel/Carousel";
 
 export default async function PlantPage({
-  params
+  params,
+  searchParams
 }: {
   params: Promise<{slug: string}>
+  searchParams: Promise<{page: string}>
 }): Promise<JSX.Element> {
   const {slug} = await params;
+  const {page} = await searchParams;
   let plants = plantJson.plants;
   const plant = plants.find((plant) => plant.id.toString() === slug);
 
@@ -19,7 +22,7 @@ export default async function PlantPage({
     <>
     <Navigation/>
     <div className={styles.page}>
-      <a href="/"><button className="button contrast">Back to search</button></a>
+      <a href={`/?page=${page}`}><button className="button contrast">Back to search</button></a>
       <div className={styles.contentWrapper}>
         <div className={styles.infoCard}>
           <div className={styles.headlines}>

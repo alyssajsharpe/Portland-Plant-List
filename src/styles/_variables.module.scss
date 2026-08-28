@@ -1,12 +1,4 @@
 /* Global Variables */
-// $primary: #2E5E4E;
-// $primaryHover: #3b7662;
-// $secondary: #6B8F71;
-// $secondaryHover: #7ca483;
-// $tertiary: #F1F3F2;
-// $tertiaryHover: #dfdfdf;
-// $contrast: #2C3E50;
-// $contrastHover: #3e556d;
 $primary: #365226;
 $primaryHover: #476a33;
 $secondary: #8D3A1E;
@@ -21,8 +13,13 @@ $accentGreen: #365226;
 $accentBlue: #345A69;
 $base: #F1EDE1;
 
-
 $white: #ffff;
 $offWhite: #f8f8f8;
 $black: #292929;
 $font: #4e4d4d;
+
+
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 1024px;
+$desktop-breakpoint: 1920px;
+

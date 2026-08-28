@@ -1,0 +1,2 @@
+import{e as r,h as o}from"./OS5VLKRW.js";import{h as e,j as t,k as n}from"./VEWNHGBN.js";e();n();t();o();function i(){if(window.isApryseWebViewerWebComponent)return r()?.getAttribute("cspNonce")||"";if(window.parent!==window)try{return window.frameElement?.dataset?.cspNonce||window.frameElement?.getAttribute("data-csp-nonce")||""}catch{return""}return""}export{i as a};
+//# sourceMappingURL=2IHIDVD4.js.map

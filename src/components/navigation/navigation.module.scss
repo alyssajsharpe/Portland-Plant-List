@@ -14,9 +14,13 @@
 
 
     .header {
-        padding: 20px;
+        padding: 25px 40px;
         display: flex;
         flex-direction: row;
+
+        @media screen and (max-width: $mobile-breakpoint) {
+            padding: 25px 20px;
+        }
 
         @media screen and (max-width: 600px) {
             flex-direction: column;
@@ -36,7 +40,13 @@
 
             h2 {
                color: $font;
-            }  
+            } 
+            
+             @media screen and (max-width: 900px) {
+                h2 {
+                    font-size: 24px;
+                }
+            }
         }
 
         .headerRight {

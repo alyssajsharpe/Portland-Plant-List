@@ -8,7 +8,7 @@
     padding: 20px;
     box-shadow: 0 6px 16px -2px rgba(38,42,130,.12), 0 0 0 5px rgba(0,0,0,0);
 
-     @media screen and (max-width: 1024px) {
+     @media screen and (max-width: $tablet-breakpoint) {
         width: 100%;
     }
 
@@ -57,7 +57,7 @@
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $mobile-breakpoint) {
          button {
             width: 100%;
          }
