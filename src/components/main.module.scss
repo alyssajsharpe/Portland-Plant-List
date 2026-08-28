@@ -11,6 +11,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
         gap: 10px;
+        margin-bottom: 20px;
 
         @media screen and (max-width: $mobile-breakpoint) {
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
