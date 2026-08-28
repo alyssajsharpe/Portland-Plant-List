@@ -2,10 +2,9 @@
 @use '@/styles/_variables.module' as *;
 
 
-// .image:active, .image:focus {
-//     transform: scale(2);
-//     transition: transform .6s;
-// }
+.image:hover {
+    cursor: pointer;
+}
 
 
 .caption {
@@ -33,6 +32,10 @@
             width: 100%;
             aspect-ratio: auto !important;
             border-radius: 0;
+
+             &:hover {
+                cursor:auto;
+            }
         }
 
         .close {
@@ -43,6 +46,10 @@
             background: rgba(0, 0, 0, 0.676);
             width: fit-content;
             padding: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 
