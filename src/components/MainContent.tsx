@@ -34,7 +34,7 @@ export default function MainContent({
               </div>
             </div>
           </a>
-        ))};
+        ))}
         </div>
         <div className={styles.paginationButtons}>
            <button className="button contrast" onClick={() => setCurrentPage((p: number) => Math.max(p - 1, 1))}> Prev</button>
