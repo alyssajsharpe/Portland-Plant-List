@@ -24,9 +24,6 @@ export default function Searchbar({
 
   return (
     <div className={styles.searchbarWrapper}>
-      <label htmlFor="search" className="sr-only">
-        Search
-      </label>
       <input className={styles.searchbarInput}
         placeholder="Search for a plant..."
         value={searchValue}
